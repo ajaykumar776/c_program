@@ -1,20 +1,12 @@
 #include<stdio.h>
 
+int sum(int, int);
+
 void main()
 {
-	int i,j, n;
-	n=5;
-	for(i=0;i<n;i++){
-		for(j=0;j<n;j++){
-		if (i==1||i==5){
-			printf("s");
-		}
-		else{
-			printf("  ");
-		}
+	printf("%d\n", sum(2, 3));
+}
 
-		}
-
-	}
-	printf("s");
+int sum(int a, int b){
+	return a+b;
 }
