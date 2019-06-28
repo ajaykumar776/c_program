@@ -12,4 +12,5 @@ void main()
 	}
 	printf("hcf is %d\n",hcf);
 
+
 }

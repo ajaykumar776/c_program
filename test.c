@@ -1,16 +1,20 @@
 #include<stdio.h>
+
 void main()
 {
-
-	int a=6,b=4,i,lcm;
-	int max = (a>b) ? a : b;
-
-	for (i=max;i<=a*b;i++){
-		if(i%a==0 && i%b==0){
-			lcm=i;
-			break;
+	int i,j, n;
+	n=5;
+	for(i=0;i<n;i++){
+		for(j=0;j<n;j++){
+		if (i==1||i==5){
+			printf("s");
 		}
-	}
+		else{
+			printf("  ");
+		}
 
-	printf("lcm of %d\n",lcm);
+		}
+
+	}
+	printf("s");
 }
