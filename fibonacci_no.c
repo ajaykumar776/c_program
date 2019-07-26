@@ -2,12 +2,14 @@
 
 void main()
 {
-	
-	int a=0,b=1,c,i,n=10;
+
+	int a,b,c,i,n;
+	printf("enter the value of a b n ");
+	scanf("%d %d %d ",&a,&b,&n);
 
 	for(i=1;i<=n;i++){
-		
-		printf("%d ",a);
+
+		printf("%2d \n",a);
 		c = a+b;
 		a=b;
 		b =c;

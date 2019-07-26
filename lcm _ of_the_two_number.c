@@ -2,7 +2,10 @@
 void main()
 {
 
-	int a=6,b=4,i,lcm;
+	int a,b,i,lcm;
+	printf("enter the element");
+	scanf("%d %d",&a,&b);
+
 	int max = (a>b) ? a : b;
 
 	for (i=max;i<=a*b;i++){

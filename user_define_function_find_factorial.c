@@ -10,6 +10,6 @@ int fact(int n){
 }
 
 void main(){
-	printf("%d\n", fact(3));
+	printf("%d\n", fact(7));
 	printf("%d\n", fact(5));
 }

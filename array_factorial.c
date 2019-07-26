@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 
 void main(){
@@ -9,7 +10,7 @@ void main(){
 		fact[i] = i * fact[i-1];
 	}
 
-	printf("%d\n", fact[2]);
+	printf("%d\n", fact[5]);
 	printf("%d\n", fact[5]);
 	printf("%d\n", fact[3]);
 	printf("%d\n", fact[4]);

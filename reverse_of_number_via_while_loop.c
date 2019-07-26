@@ -2,13 +2,15 @@
 
 void main()
 {
-	
-	int rem,n=12345;
+
+	int rem,n;
+	printf("enter the value  of n");
+	scanf("%d",&n);
 
 	while(n){
 
 		rem = n%10;
-		printf("%d",rem);
+		printf("%d ",rem);
 		n/=10;
 	}
 }

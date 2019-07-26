@@ -2,13 +2,15 @@
 
 void main()
 {
-	int n=2,i,mul=1;
+	int n,i,mul=1;
+	printf("enter the value of n");
+	scanf("%d",&n);
 
 	for (i=1;i<=10;i++){
+            mul=i*n;
+            printf(" %2d * %2d = %2d \n",n,i,mul);
+    }
 
-		mul=n*i;
-
-		printf("%d\n",mul);
-	}
 
 }
+

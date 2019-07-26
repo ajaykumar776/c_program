@@ -2,12 +2,14 @@
 
 void main()
 {
-	int i,n=11,flag=0;
-	for(i=2;i<n;i++){
-		if( n%i==0)
-		{
-			flag=1;
-		}
+	int i,n,flag=0;
+    printf("enter the value of n");
+    scanf("%d",&n);
+    for(i=2;i<n;i++){
+        if( n%i==0)
+        {
+            flag=1;
+        }
 	}
 	if(flag==1){
 		printf("it is non prime");
