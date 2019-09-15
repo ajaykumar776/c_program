@@ -6,14 +6,15 @@ void main(){
 	printf("Enter total number: ");
 	scanf("%d", &n);
 
-	for(i=0;i<n;i++){
-		printf("Number %d: ", i+1);
+        for(i=0;i<n;i++){
+		//printf("Number %d: ", i+1);
 		scanf("%d", &a[i]);
-	}
-
-	for(i=0;i<n;i++){
 		sum+=a[i];
-	}
+        }
+
+        //for(i=0;i<n;i++){
+		//sum+=a[i];
+
 
 	printf("Total sum is %d\n", sum);
 }

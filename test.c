@@ -1,20 +1,20 @@
 #include<stdio.h>
 
-int a,b;
+int sum(int n){
 
-void swap()
-{
-    int tmp;
-    tmp = a;
-    a = b;
-    b = tmp;
-    printf("values after swap a = %d and b = %d\n", a, b);
+    int fact=0;
+    if(n>0)
+    fact= fact*fact(n-1);
+    return fact;
 }
+
 
 void main()
 {
-    printf("enter the value of a  b");
-    scanf("%d %d",&a,&b);
-    swap();
-    printf("a %d b %d\n", a, b);
+    int n=10;
+    printf("your sum is %d:",sum(n));
+
+
+
+
 }

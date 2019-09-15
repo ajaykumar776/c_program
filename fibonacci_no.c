@@ -9,7 +9,7 @@ void main()
 
 	for(i=1;i<=n;i++){
 
-		printf("%2d \n",a);
+		printf("%d \n",a);
 		c = a+b;
 		a=b;
 		b =c;

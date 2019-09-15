@@ -7,7 +7,7 @@ int modify (){
 }
 
 void main(){
-	int n=6;
+    int n=6;
 	modify();
 	printf("from main %d\n", n);
 }
