@@ -4,8 +4,10 @@ void main()
 
 {
 	int n,i,sum=0;
+	printf("enter the value of n");
+	scanf("%d",&n);
 
-	for (i=1;i<=20;i++){
+	for (i=1;i<=n;i++){
 
 		if(n%2==0){
 

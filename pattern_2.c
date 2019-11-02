@@ -1,12 +1,16 @@
 #include<stdio.h>
 void main()
 {
-	int i,j,n=10;
-	for (i=1;i<=n;i++){
-		for(j=1;j<=i;j++){
-			printf("ajay");
+	int i,j,n=4;
+	for (i=0;i<=n;i++){
+		for(j=0;j<=i;j++){
+                printf("*");
+
 		}
-		printf("\n");
+        printf("\n");
 	}
 	printf("\n");
+
+
+
 }

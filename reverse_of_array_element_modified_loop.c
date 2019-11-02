@@ -18,8 +18,13 @@ void reverse_array_with_modified_loop(int a[],int n)
 void main()
 {
 
-    int  a[] = {1,2,3,4,5};
+    int  a[10],i;
     int n = sizeof(a)/sizeof(a[0]);
+    printf("enter the array the array element\n");
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+
     reverse_array_with_modified_loop(a,n);
 
 }

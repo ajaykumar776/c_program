@@ -3,7 +3,7 @@
 int sum(int n){
     int sum1 = 0;
     if(n>0){
-        sum1 = n + sum(n-2);
+        sum1 = n + sum(n-1);
     }
     return sum1;
 }
@@ -12,7 +12,9 @@ int sum(int n){
 void main()
 {
 
-    int n = 10;
+    int n ;
+    printf("enter the value of n");
+    scanf("%d",&n);
 
     printf("sum of even number  is %d.\n",sum(n));
 

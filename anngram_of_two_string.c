@@ -38,6 +38,7 @@ int is_anagram(char str1[], char str2[])
 }
 
 void main()
+
 {
 
     char str1[5]="ram";

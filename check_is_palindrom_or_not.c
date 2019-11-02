@@ -15,8 +15,8 @@ void main()
 {
     char ar[20];
     printf("enter the the string");
-    ();
-    int l=strlen(ar);
+    gets(ar);
+    int l = strlen(ar);
     int flag;
     flag=palindrom(ar,l);
 
