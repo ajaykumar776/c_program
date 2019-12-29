@@ -4,7 +4,7 @@ long int fact(long int x);
 
 void main()
 {
-    int n=4,r=2;
+    int n=5,r=3;
     float ncr;
     ncr=fact(n)/(fact(r)*fact(n-r));
     printf("ncr=%f",ncr);

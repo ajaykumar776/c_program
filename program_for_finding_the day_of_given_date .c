@@ -2,7 +2,7 @@
 void main()
 {
 	
-	int y,y1,d,cal,m1,flag,flag1;
+	int y,y1,d,cal,m1,flag,flag1=0;
 	int m;;
 	int jan=0;
 	int feb=3;
@@ -27,7 +27,7 @@ void main()
 		m1=5;
 
 
-	if((y%4==0&&y%100!=0)||(y%400==0))
+	if((y%400==0 )||(y%4==0&& y%100!=0))
 	{
 		flag1=1;
 	}
@@ -40,7 +40,7 @@ void main()
 		//printf("%d\n",cal );
 		if(flag1==1){
 			cal=cal-1;
-			//printf("%d\n",cal );
+			printf("%d\n",cal );
 		}
 		cal=(int)cal%7;
 		//printf("%d\n",cal );

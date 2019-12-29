@@ -2,16 +2,16 @@
 void main()
 {
     int i,a[10];
+    int n;
     printf("enter the array size");
-     int j;
-    scanf("%d",&j);
+    scanf("%d",&n);
     printf("enter the array element");
 
-    for(i=0;i<j;i++)
+    for(i=0;i<n;i++)
         scanf("%d",&a[i]);
     int max=a[0],min=a[0];
 
-    for(i=1;i<j;i++){
+    for(i=1;i<n;i++){
     if(max<a[i])
         max=a[i];
         if(min>a[i])
