@@ -1,20 +1,26 @@
 #include<stdio.h>
-void main()
+
+void convert_capital_to_samll_letter(char str[])
 {
-    int i,a[10];
-    printf("enter the array size");
-     int j;
-    scanf("%d",&j);
-    printf("enter the array element");
 
-    for(i=0;i<j;i++)
-        scanf("%d",&a[i]);
-    int max=a[0],min=a[0];
+    int i;
+    for(i=0;str[i]!='/0';i++)
+    {
+    if(str[i]>=65 && str[i]<=90){
+    str[i]+= 32;
+    }else
+            str[i]-=32;
+    }
+    printf("converting string is %s",str);
 
-    for(i=1;i<j;i++){
-    if(max<a[i])
-        max=a[i];
-        if(min>a[i])
-            min=a[i];}
-    printf("%d %d",max,min);
+
+}
+
+void main()
+
+{
+     char str[100];
+     printf("enter the sting:");
+     gets(str);
+     convert_capital_to_samll_letter(str);
 }

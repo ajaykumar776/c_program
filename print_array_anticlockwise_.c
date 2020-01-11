@@ -1,4 +1,5 @@
 //print array anti_clockwise
+
 #include<stdio.h>
 
 void c_shift(int a[],int n)
@@ -9,8 +10,11 @@ void c_shift(int a[],int n)
         if(i<n-1){
             a[i] = a[i+1];
         }
-        else{
-            a[i] = k;
+        else
+        {
+
+            a[i] = k;//
+
         }
     }
     for(i=0;i<n;i++){
@@ -21,8 +25,8 @@ void c_shift(int a[],int n)
 
 void main()
 {
-    int a[] = {1,2,3,4,5};
-    int n = sizeof (a)/sizeof a[0];
+    int a[] = {1,2,3,4,5,6,7,8,9,10};
+    int n=sizeof (a)/sizeof a[0];
     c_shift(a,n);
 
 

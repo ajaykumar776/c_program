@@ -1,5 +1,7 @@
 #include<stdio.h>
+
 void main()
+
 {
     int i,a[10];
     int n;

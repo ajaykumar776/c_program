@@ -1,11 +1,10 @@
 #include<stdio.h>
 void main()
 {
-
-    int n=100,i;
-    for(i=1;i<100;i++){
-        printf(" .....sudi....\n ");
-    }
-
+	int n= 100;
+	int i;
+	for(i=0;i<n;i++){
+		printf("--------------sudipta aaja call pe jaldiii--------------------------\n");
+	}
 
 }

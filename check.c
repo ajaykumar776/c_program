@@ -1,19 +1,18 @@
 #include<stdio.h>
+void main()
 {
-
-	int n,i.flag=0;
-	printf("enter the value of n\n");
-	scanf("%d",&n);
-	for(i=2;i<=n;i++){
-		if(n%i==0){
-			flag=1;
-
-		}
-	}
-	if(flag==1){
-		printf("given number no is prime number\n");
-	}else
-	{
-		printf("not prime number\n");
-	}
+    int a[]={1,2,3,4,5,6};
+    int n= sizeof(a)/sizeof a[0];
+    int p,i;
+    printf("emter the value of p : \n");
+    scanf("%d",&p);
+    for(i=0;i<n;i++){
+        if(i==3){
+            a[i]='\0';
+        }
+    }
+    printf("array after aasining the value \n");
+    for(i=0;i<n;i++){
+        printf("%d\n",a[i] );
+    }
 }

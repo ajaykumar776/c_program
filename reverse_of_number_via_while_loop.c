@@ -10,7 +10,7 @@ void main()
 	while(n){
 
 		rem = n%10;
-		printf("%d ",rem);
+		//printf("%d ",rem);
 		n/=10;
 	}
 }
