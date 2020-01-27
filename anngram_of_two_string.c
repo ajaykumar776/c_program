@@ -17,8 +17,9 @@ int is_anagram(char str1[], char str2[])
         c=str1[i];
         a1[c-'a']++;
     }
-    for(i=0;i<26;i++) printf("%d ", a1[i]);
-    printf("\n");
+    for(i=0;i<26;i++)
+        printf("%d ", a1[i]);
+        printf("\n");
 
     // for str2 ram
     len2 = strlen(str2);
@@ -26,12 +27,16 @@ int is_anagram(char str1[], char str2[])
         c=str2[i];
         a2[c-'a']++;
     }
-    for(i=0;i<26;i++) printf("%d ", a2[i]);
+    for(i=0;i<26;i++)
+
+    printf("%d ", a2[i]);
+
     printf("\n");
 
     int flag = 1;
     for(i=0;i<26;i++){
-        if(a1[i] != a2[i]) flag=0;
+        if(a1[i] != a2[i])
+         flag=0;
     }
 
     return flag;

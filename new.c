@@ -1,26 +1,24 @@
 #include<stdio.h>
-
-void convert_capital_to_samll_letter(char str[])
-{
-
-    int i;
-    for(i=0;str[i]!='/0';i++)
-    {
-    if(str[i]>=65 && str[i]<=90){
-    str[i]+= 32;
-    }else
-            str[i]-=32;
-    }
-    printf("converting string is %s",str);
-
-
-}
-
+int fib(int n);
 void main()
-
 {
-     char str[100];
-     printf("enter the sting:");
-     gets(str);
-     convert_capital_to_samll_letter(str);
+	int n, i;
+	printf("enter the value of n \n");
+	scanf("%d",&n);
+	printf("your fibonacee series are : \n");
+	for(i=1;i<=n;i++){
+	
+	printf("%d\n",fib(i) );
+	}
+}
+int fib(int n)
+{
+if(n==1||n==2){
+
+ return 1;
+}
+else{
+	return fib(n-1)+fib(n-2);
+	}
+	
 }
