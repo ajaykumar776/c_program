@@ -1,39 +1,21 @@
 #include<stdio.h>
+#include<stdlib.h>
+
+typedef struct node {
+    int data;
+}s_node;
+
 void main()
-
 {
-  int i,n,f,m,l,arr[100],p;
-  printf("enter value of n \n");
-  scanf("%d",&n);
-  printf("enter the all %d  integer sorted order \n",n );
-  for(i=0;i<n;i++)
-  {
-    scanf("%d",&arr[i]);
-  }
-  printf("enter value to find or search");
-  scanf("%d",&p);
-  //printf("%d",p );
-  f=0;
-  l=n-1;
-  m=(f+l)/2;
-  printf("%d\n",m );
-  while(f<=l)
-  {
-    if(arr[m]<p){
-      f=m+1;
-    }else if(arr[m]==p){
-      printf("%d found at location %d\n",p,m+1 );
-      break;
-    }
-    else
-    {
-      l=m-1;
-      m=(f+l)/2;
-    }
-    if(f>l)
-    {
-      printf("%d is not found in the array \n", p);
-    }
+    printf("Enter a number: ");
+    s_node *n1, *n2;
+    n1 = (s_node*)malloc(sizeof(s_node));
+    scanf("%d", &n1->data);
+    //printf("number is %d\n", n1->data);
+    printf("enter the 2nd number \n");
 
-  }
+    n2 = (s_node*)malloc(sizeof(s_node));
+    scanf("%d", &n2->data);
+    printf("first number=%d\n",n1->data );
+    printf("second number= %d", n2->data);
 }

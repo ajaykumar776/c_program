@@ -1,39 +1,36 @@
 #include<stdio.h>
-void main()
+#include<stdlib.h>
 
+typedef struct node
 {
-  int i,n,f,m,l,arr[100],p;
-  printf("enter value of n \n");
-  scanf("%d",&n);
-  printf("enter the all %d  integer sorted order \n",n );
-  for(i=0;i<n;i++)
-  {
-    scanf("%d",&arr[i]);
-  }
-  printf("enter value to find or search");
-  scanf("%d",&p);
-  //printf("%d",p );
-  f=0;
-  l=n-1;
-  m=(f+l)/2;
-  printf("%d\n",m );
-  while(f<=l)
-  {
-    if(arr[m]<p){
-      f=m+1;
-    }else if(arr[m]==p){
-      printf("%d found at location %d\n",p,m+1 );
-      break;
-    }
-    else
-    {
-      l=m-1;
-      m=(f+l)/2;
-    }
-    if(f>l)
-    {
-      printf("%d is not found in the array \n", p);
+    int data;
+    struct node *next;
+}s;
+
+void main()
+{
+    int n;
+    struct node *snode,*head,*temp = NULL;
+
+    printf("Enter total number: ");
+    scanf("%d", &n);
+
+    while(n){
+        snode = (struct node*)malloc(sizeof(struct node));
+        scanf("%d", &snode->data);
+        if(temp == NULL){
+            snode->next = NULL;
+            temp = snode;
+        }else{
+            snode->next = temp;
+            temp=snode;
+        }
+        n--;
     }
 
-  }
+    head = temp;
+    while(temp!=NULL){
+        printf("%d ", temp->data);
+        temp = temp->next;
+    }
 }

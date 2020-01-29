@@ -8,7 +8,8 @@ void main()
 	char str2[100];
 	char str3[100];
 	char  *ptr1,*ptr2;	
-	
+	//while(1)
+	//{
 
 		printf("\nenter your choices\n");
 		printf("1.cancatinate of two string \n");
@@ -50,4 +51,5 @@ void main()
 		default :
 			printf("no choice \n");
 		}
-	}
+	//}
+}
