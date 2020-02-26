@@ -1,10 +1,10 @@
 #include<stdio.h>
 
-int palindrom(char ar[],int l)
+int palindrom(char str[],int l)
 {
     int flag=1,i;
-    for(i=0;i<l;i++){
-        if(ar[i]!= ar[l-i-1])
+    for(i=0;i<l/2;i++){
+        if(str[i]!= str[l-i-1])
             flag=0;
     }
     return flag;
@@ -13,12 +13,12 @@ int palindrom(char ar[],int l)
 void main()
 
 {
-    char ar[20];
+    char str[20];
     printf("enter the the string");
-    gets(ar);
-    int l = strlen(ar);
+    scanf("%s",str)
+    int l = strlen(srr);
     int flag;
-    flag=palindrom(ar,l);
+    flag=palindrom(str,l);
 
     if(flag==1)
     {

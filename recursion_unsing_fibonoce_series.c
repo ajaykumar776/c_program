@@ -10,6 +10,7 @@ void main()
     printf("%ld\n",fib(i) );
 }
 }
+
 long int fib(long int n)
 {
     if(n==1||n==2){

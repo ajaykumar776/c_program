@@ -12,9 +12,8 @@ void main()
         r=n%10;
         sum=10*sum+r;
         n=n/10;
-
     }
-    while(n!=0);
+    while(n!=0);   
     if(n1==sum){
 
         printf("your number is palindrome \n");

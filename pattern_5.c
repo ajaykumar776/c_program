@@ -2,7 +2,7 @@
 
 void main()
 {
-	int i, j, n=10, c;
+	int i, j, n=5, c;
 
 	c=1;
 	for(i=0;i<n;i++){

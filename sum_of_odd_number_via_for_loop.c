@@ -10,9 +10,10 @@ void main()
             if(i%2==0){
 
 
-                printf( %d\n",sum);
+                printf( "%d\n",sum);
 
             }
     }
     printf("sum is %d\n",sum);
 }
+

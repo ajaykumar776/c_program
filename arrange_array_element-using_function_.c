@@ -1,5 +1,5 @@
 #include<stdio.h>
-void creat(int arr[],int n);
+void arrange_in_accending(int arr[],int n);
 void main()
 {
     int arr[10];
@@ -12,7 +12,7 @@ void main()
     }
     creat(arr,n);
 }
-void creat(int arr[],int n)
+void arrange_in_accending(int arr[],int n)
 {
      
     int i,j,tem;

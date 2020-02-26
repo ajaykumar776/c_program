@@ -16,11 +16,13 @@ void main()
     }
 
     }
-
     if(flag==1){
 
         printf("your number is available");
-    }else{
+
+    }
+    else
+    {
 
         printf("your number is  not available");
 

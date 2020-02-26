@@ -66,7 +66,7 @@ void insert_end(int n1,int ar[])
     scanf("%d",&a);
     for(i=0;i<=n1;i++){
         if(i==n1){
-            ar[i]=a;sssss
+            ar[i]=a;
         }
         
     }
@@ -79,13 +79,16 @@ void insert_end(int n1,int ar[])
 
 void insert_any(int n1,int ar[])
 {
-    int i,a;
+    int i,a,pos;
     printf("enter the value of a_ : \n");
     scanf("%d",&a);
-       for(i=n1-1;i>=a;i--){
+    printf("enter the position : \n");
+    scanf("%d",&pos);
+
+    for(i=n1-1;i>=pos;i--){
         ar[i+1]=ar[i];       
     }
-    ar[i+1]=ar[i];
+    ar[i+1]=a;
     n1++;
     printf("new array element \n");
     for(i=0;i<n1;i++){

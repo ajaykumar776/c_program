@@ -14,7 +14,7 @@ void main()
 {
     char str[100];
     printf("enter the sting:");
-    gets(str);
+    scanf("%s",str);
     find_asci_value_of_string(str);
 
 

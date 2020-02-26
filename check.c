@@ -1,53 +1,95 @@
 #include<stdio.h>
-#include<string.h>
+#include<stdlib.h>
+typedef struct node
+{
+    int data;
+    struct node *next,*prev;
+}s;
 
+struct node *head,*temp;
+
+void insert_beggining()
+
+{
+  struct node *dnode,temp;
+  int i,n;
+  printf("enter total node : \n");
+  scanf("%d",&n);
+  for(i=0;i<n;i++)
+  {
+    printf("enter the %d node :\n",i+1 );
+    dnode=(struct node*)malloc(sizeof(struct node));
+    scanf("%d",&dnode->data);
+
+  if(head==NULL){
+    
+    head=dnode;
+  }
+  else{
+    head->prev=dnode;
+    dnode->next=head;
+    head=dnode;
+   }
+}
+
+}
+void insert_at_end()
+{
+  struct node *dnode,*temp,*prev;
+  int i,n;
+  printf("enter total node : \n");
+  scanf("%d",&n);
+  for(i=0;i<n;i++)
+  {
+  
+    printf("enter the %d node :\n",i+1 );
+    dnode=(struct node*)malloc(sizeof(struct node));
+    scanf("%d",&dnode->data);
+    head->next=NULL;
+    head->prev=NULL;
+
+  if(head==NULL){
+    
+    head=dnode;
+  }
+  else
+  {
+    temp=head;
+
+    while(temp!=NULL)
+    {
+      temp=temp->next;
+    }
+    dnode->next=NULL;
+    temp->next=dnode;
+    dnode->prev=temp;
+   }
+ }
+
+}
+
+void print()
+
+{
+    struct node *temp;
+    temp=head;
+    while(temp!=NULL)
+    {
+        printf("%d -> ",temp->data );
+        temp=temp->next;
+        
+    }
+    printf("\n");
+
+}
 void main()
 {
-	int ch,i,j,flag=0;
-	char str1[100];
-	char str2[100];
-	char str3[100];
-	char  *ptr1,*ptr2;	
-	
 
-		printf("\nenter your choices\n");
-		printf("1.cancatinate of two string \n");
-		printf("2,find the lenght h of the two string  \n");
-		scanf("%d",&ch);
-		switch(ch)
-		{
-			case 1:
-			{
-				printf("enter the two string \n");
-				scanf("%s%s",str1,str2);
-				ptr1=str1;
-				ptr2=str2;
-				j=0;
-				for(;*ptr1!='\0';ptr1++){
-					str3[j]=*ptr1;
-					j++;
-				}
-				for(;*ptr2;ptr2++){
-					str3[j]=*ptr2;
-					j++;
-				}
-				printf("Concayed string is \n");
-				printf("%s",str3);
-				break;
-			}
-			case 2:
-			{
-			printf("enter any string \n");
-			scanf("%s",str1);
-			j=0;
-			ptr1=str1;
-			for(;*ptr1!='\0';ptr1++){
-				j++;
-			}
-			printf("length of the string is %d \n",j);
-			break;
-			}
-		default :
-			printf("no choice \n");
-		}
-	}
+  insert_beggining();
+   print();
+   insert_at_end();
+   print();
+
+
+}
+

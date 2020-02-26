@@ -1,36 +1,32 @@
-#include<stdio.h>
-#include<stdlib.h>
-
-typedef struct node
-{
-    int data;
-    struct node *next;
-}s;
-
+ #include<string.h>
+ #include<stdio.h>
 void main()
 {
-    int n;
-    struct node *snode,*head,*temp = NULL;
 
-    printf("Enter total number: ");
-    scanf("%d", &n);
+    int hh,mm,ss;
+    char a[10];
+    printf("enter the HH : MM: SS : \n");
+    scanf("%d%d%d",&hh,&mm,&ss);
+    printf("enter string: AM or PM :\n");
+    scanf("%s",a);
 
-    while(n){
-        snode = (struct node*)malloc(sizeof(struct node));
-        scanf("%d", &snode->data);
-        if(temp == NULL){
-            snode->next = NULL;
-            temp = snode;
-        }else{
-            snode->next = temp;
-            temp=snode;
+ if(hh <= 12 && mm <= 59 && ss <= 59)      
+    {
+        if((strcmp(a,"PM") == 0) || (strcmp(a,"pm") == 0) 
+           && (hh != 0) && (hh != 12))
+        {
+            hh = hh + 12;
         }
-        n--;
+        if((strcmp(a,"AM") == 0) || (strcmp(a,"am") == 0) && (hh == 12))
+        {
+            hh = 0;
+        }
+        printf("The obtained 24-hour format of input is \t");
+        printf("%02d:%02d:%02d", hh, mm, ss);
+        printf("\n\n");
     }
-
-    head = temp;
-    while(temp!=NULL){
-        printf("%d ", temp->data);
-        temp = temp->next;
+    else
+    {
+        printf("Provide the correct inputs.");
     }
 }
