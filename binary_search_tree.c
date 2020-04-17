@@ -81,13 +81,40 @@ void postorder(struct node *snode)
     }
 
 }
+int search(struct node *snode,int n)
+{
+    if(snode==NULL)
+        return 0;
+    if(n==snode->data)
+        return 1;
+    else if(n>snode->data)
+        return search(snode->right,n);
+    else
+        return search(snode->left,n);
+}
 
 void main()
 {
-    printf("your general tree are :\n");
-    root=create(1);
-    root->left=create(2);
-    root->right=create(3);
+    int n;
+    printf("your general tree are  : \n");
+    root=create(7);
+    root->left=create(3);
+    root->right=create(9);
+    root->left->left=create(2);
+    root->left->right=create(4);
+    root->right->left=create(8);
+    root->right->right=create(10);
+    printf("enter the value of n u want to search in tree  : \n");
+    scanf("%d",&n);
+    search(root,n);
+    if(search(root,n))
+    {
+        printf("node is present :\n");
+    }else
+    {
+        printf("not found\n\n");
+    }
+    printf("\n");
     printf("height of the tree    :%d\n",height(root));
     printf("total no of nodes     :%d\n",count(root));
     printf("total leaf nodes are  :%d\n",count_leaf(root));
