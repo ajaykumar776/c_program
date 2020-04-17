@@ -98,9 +98,5 @@ void main()
     printf("PREORDER: \n");
     preorder(root);
 
-
-
-
-
 }
 

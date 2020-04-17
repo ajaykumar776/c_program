@@ -22,6 +22,3 @@ void main()
     int n=16;
     decimal_to_binary(n);
 }
-
-
-
